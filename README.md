@@ -50,7 +50,9 @@ OPENSSL_VERSION=1.1.1w
 OPENSSH_VERSION=V_10_2_P1
 ```
 
-Run it on /usr/local or /opt/ssh
+## Run
+
+Execute the script on /usr/local or /opt/ssh
 
 ## Notes
 
@@ -58,3 +60,4 @@ Run it on /usr/local or /opt/ssh
 - **Clean builds:** The script removes `root`, `build`, and `dist` at the start. Comment out line 21 to keep cached builds for debugging.
 - **sshd_config:** Enables `PubkeyAuthentication`, disables other auth methods, and strips Kerberos/GSSAPI options.
 - **Centos 7:** Full tested and working.
+- **No PAM:** Just key authentication for user root validated.
