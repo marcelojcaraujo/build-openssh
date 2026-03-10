@@ -1,0 +1,4 @@
+# Build artifacts from openssh-build-static.sh
+/root
+/build
+/dist
