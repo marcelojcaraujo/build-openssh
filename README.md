@@ -50,10 +50,11 @@ OPENSSL_VERSION=1.1.1w
 OPENSSH_VERSION=V_10_2_P1
 ```
 
-Change `prefix` (default: `/opt/openssh`) to install elsewhere.
+Run it on /usr/local or /opt/ssh
 
 ## Notes
 
 - **CentOS 6:** The script applies patches to `configure.ac` to work around older `autoconf` macros.
 - **Clean builds:** The script removes `root`, `build`, and `dist` at the start. Comment out line 21 to keep cached builds for debugging.
 - **sshd_config:** Enables `PubkeyAuthentication`, disables other auth methods, and strips Kerberos/GSSAPI options.
+- **Centos 7:** Full tested and working.
